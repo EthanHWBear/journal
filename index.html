@@ -5,10 +5,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="bundle.js"></script>
     <link rel="stylesheet" href="./../css/styles.css">
-    <title>Journal</title>
+    <title>Your Journal</title>
   </head>
 </head>
 <body>
-  
+  <form class="journal">
+    <div id="title">
+      <h2>Your Journal Title</h2></label>
+      <input type="text" id="title" name="title" class="form-control">
+    </div>
+    <div class="body">
+      <h3>Text Body</h3>
+      <textarea id="body-text" class="form-control"></textarea>
+      <br>
+      <button type="submit" class="btn btn-success">Submit Journal Entry</button> 
+    </div>
+  </form>        
 </body>
 </html>

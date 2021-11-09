@@ -21,3 +21,9 @@ JournalEntry.prototype.getCount = function() {
 
   return myObject;
 };
+
+JournalEntry.prototype.getTeaser = function() {
+  let wordLength = this.body.split(" ");
+  let wordEight = wordLength.splice(0, 8).join(" ");
+  return wordEight;
+}
